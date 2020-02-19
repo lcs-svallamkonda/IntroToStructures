@@ -32,6 +32,8 @@ import Foundation
  
  */
 // Begin your work here...
+
+//circle structure
 struct circle {
     
     // MARK: Properties
@@ -54,7 +56,7 @@ struct circle {
     
     // Computed property to return a description of the perimeter
     var perimeterDescription: String {
-        return "The perimeter of the circle is " + String(format: "%.1f", perimeter) + " square units."
+        return "The perimeter of the circle is " + String(format: "%.1f", perimeter) + " units."
     }
 }
 // Create a circle instance
@@ -66,6 +68,11 @@ someCircle.area
 // Report on the area?
 print(someCircle.areaDescription)
 
+//What is the perimeter?
+someCircle.perimeter
+
+//Report on the area?
+print(someCircle.perimeterDescription)
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
