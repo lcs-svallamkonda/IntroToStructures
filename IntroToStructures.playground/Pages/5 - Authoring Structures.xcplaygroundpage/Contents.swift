@@ -40,13 +40,13 @@ struct circle {
     var radius: Double
     
     // Computed property to return the raw area
-    var areaOfCircle: Double {
+    var area: Double {
         return Double.pi * pow(radius, 2.0)
     }
     
     // Computed property to return a description of the area
-    var circleAreaDescription: String {
-        return "The area of the circle is " + String(format: "%.1f", areaOfCircle) + " square units."
+    var areaDescription: String {
+        return "The area of the circle is " + String(format: "%.1f", area) + " square units."
     }
     
     // Computed property to return the raw perimeter
@@ -63,10 +63,10 @@ struct circle {
 var someCircle = circle(radius: 5)
 
 // What is the area?
-someCircle.areaOfCircle
+someCircle.area
 
 // Report on the area?
-print(someCircle.circleAreaDescription)
+print(someCircle.areaDescription)
 
 //What is the perimeter?
 someCircle.circumference
@@ -86,25 +86,43 @@ struct triangle {
     var sideB: Double
     
     // Computed property to return the raw area
-    var areaOfTriangle: Double {
+    var area: Double {
         return (base * height) / 2
     }
     
     // Computed property to return a description of the area
-    var triangleAreaDesription: String {
-        return "The area of the triangle is " + String(format: "%.1f", areaOfTriangle) + " square units."
+    var areaDesription: String {
+        return "The area of the triangle is " + String(format: "%.1f", area) + " square units."
     }
     
     //Computed property to return the raw perimeter
-    var trianglePerimeter: Double {
+    var perimeter: Double {
         return base + sideA + sideB
     }
     
     // Computed property to return a description of the perimeter
-    var trianglePerimeterReport: String {
-        return "The perimeter of the triangle is " + String(format: "%.1f", trianglePerimeter) + " units."
+    var perimeterReport: String {
+        return "The perimeter of the triangle is " + String(format: "%.1f", perimeter) + " units."
     }
 }
+
+//Create a triangle instance
+var someTriangle = triangle(base: 3, height: 4, sideA: 5, sideB: 4)
+
+// What is the area?
+someTriangle.area
+
+// Report on the area?
+print(someTriangle.areaDesription)
+
+//What is the perimeter?
+someTriangle.perimeter
+
+//Report on the area?
+print(someTriangle.perimeterReport)
+
+
+//
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
