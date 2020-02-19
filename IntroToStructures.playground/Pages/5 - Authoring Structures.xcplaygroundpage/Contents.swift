@@ -46,6 +46,16 @@ struct circle {
     var areaDescription: String {
         return "The area of the circle is " + String(format: "%.1f", area) + " square units."
     }
+    
+    // Computed property to return the raw perimeter
+    var perimeter: Double {
+        return 2 * Double.pi * radius
+    }
+    
+    // Computed property to return a description of the perimeter
+    var perimeterDescription: String {
+        return "The perimeter of the circle is " + String(format: "%.1f", perimeter) + " square units."
+    }
 }
 // Create a circle instance
 var someCircle = circle(radius: 5)
