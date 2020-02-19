@@ -73,6 +73,26 @@ someCircle.circumference
 
 //Report on the area?
 print(someCircle.circumferenceDescription)
+
+
+
+//triangle structure
+struct triangle {
+    
+    //MARK: Properties
+    var base: Double
+    var height: Double
+    
+    // Computed property to return the raw area
+    var areaOfTriangle: Double {
+        return (base * height) / 2
+    }
+    
+    // Computed property to return a description of the area
+    var triangleAreaDesription: String {
+        return "The area of the triangle is " + String(format: "%.1f", areaOfTriangle) + " square units."
+    }
+}
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
