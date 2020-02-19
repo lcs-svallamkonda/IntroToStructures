@@ -82,6 +82,8 @@ struct triangle {
     //MARK: Properties
     var base: Double
     var height: Double
+    var sideA: Double
+    var sideB: Double
     
     // Computed property to return the raw area
     var areaOfTriangle: Double {
@@ -91,6 +93,16 @@ struct triangle {
     // Computed property to return a description of the area
     var triangleAreaDesription: String {
         return "The area of the triangle is " + String(format: "%.1f", areaOfTriangle) + " square units."
+    }
+    
+    //Computed property to return the raw perimeter
+    var trianglePerimeter: Double {
+        return base + sideA + sideB
+    }
+    
+    // Computed property to return a description of the perimeter
+    var trianglePerimeterReport: String {
+        return "The perimeter of the triangle is " + String(format: "%.1f", trianglePerimeter) + " units."
     }
 }
 /*:
