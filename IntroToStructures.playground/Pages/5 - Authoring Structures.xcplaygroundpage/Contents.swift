@@ -40,39 +40,39 @@ struct circle {
     var radius: Double
     
     // Computed property to return the raw area
-    var area: Double {
+    var areaOfCircle: Double {
         return Double.pi * pow(radius, 2.0)
     }
     
     // Computed property to return a description of the area
-    var areaDescription: String {
-        return "The area of the circle is " + String(format: "%.1f", area) + " square units."
+    var circleAreaDescription: String {
+        return "The area of the circle is " + String(format: "%.1f", areaOfCircle) + " square units."
     }
     
     // Computed property to return the raw perimeter
-    var perimeter: Double {
+    var circumference: Double {
         return 2 * Double.pi * radius
     }
     
     // Computed property to return a description of the perimeter
-    var perimeterDescription: String {
-        return "The perimeter of the circle is " + String(format: "%.1f", perimeter) + " units."
+    var circumferenceDescription: String {
+        return "The perimeter of the circle is " + String(format: "%.1f", circumference) + " units."
     }
 }
 // Create a circle instance
 var someCircle = circle(radius: 5)
 
 // What is the area?
-someCircle.area
+someCircle.areaOfCircle
 
 // Report on the area?
-print(someCircle.areaDescription)
+print(someCircle.circleAreaDescription)
 
 //What is the perimeter?
-someCircle.perimeter
+someCircle.circumference
 
 //Report on the area?
-print(someCircle.perimeterDescription)
+print(someCircle.circumferenceDescription)
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
