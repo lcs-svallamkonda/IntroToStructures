@@ -47,7 +47,14 @@ struct circle {
         return "The area of the circle is " + String(format: "%.1f", area) + " square units."
     }
 }
+// Create a circle instance
+var someCircle = circle(radius: 5)
 
+// What is the area?
+someCircle.area
+
+// Report on the area?
+print(someCircle.areaDescription)
 
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
