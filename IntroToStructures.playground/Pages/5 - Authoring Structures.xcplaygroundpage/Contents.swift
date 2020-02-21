@@ -193,6 +193,21 @@ struct sphere {
            return "The volume of the sphere is " + String(format: "%.1f", volume) + " cubed units."
        }
 }
+
+//Create a sphere instance
+var someSphere = sphere(radius: 5)
+
+// What is the surface area?
+someSphere.surfaceArea
+
+// Report on the surface area?
+print(someSphere.surfaceAreaReport)
+
+//What is the volume?
+someSphere.volume
+
+//Report on the volume?
+print(someSphere.volumeReport)
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
