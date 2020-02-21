@@ -135,11 +135,36 @@ struct cylinder {
         return 2 * Double.pi * pow(radius, 2) + 2 * Double.pi * radius * height
     }
     
+    //Computed property to return a description of the surface area
+    var surfaceAreaReport: String {
+        return "The surface area of the cylinder is " + String(format: "%.1f", surfaceArea) + " square units."
+    }
+    
     //Computed property to return the volume
     var volume: Double {
         return Double.pi * pow(radius, 2) * height
     }
+    
+    //Computed property to return a description of the volume
+    var volumeReport: String {
+        return "The volume of the cylinder is " + String(format: "%.1f", volume) + " cubed units."
+    }
 }
+
+//Create a cylinder instance
+var someCylinder = cylinder(radius: 2, height: 5)
+
+// What is the surface area?
+someCylinder.surfaceArea
+
+// Report on the surface area?
+print(someCylinder.surfaceAreaReport)
+
+//What is the volume?
+someCylinder.volume
+
+//Report on the volume?
+print(someCylinder.volumeReport)
 
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
