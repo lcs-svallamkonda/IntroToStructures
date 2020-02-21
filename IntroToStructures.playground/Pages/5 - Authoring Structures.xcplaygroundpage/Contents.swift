@@ -166,6 +166,23 @@ someCylinder.volume
 //Report on the volume?
 print(someCylinder.volumeReport)
 
+
+
+//sphere structure
+struct sphere {
+    
+    //MARK: Properties
+    var radius: Double
+    
+    //Computed property to return the raw total surface area
+    var surfaceArea: Double {
+        4 * Double.pi * pow(radius, 2)
+    }
+    
+   //Computed property to return a description of the surface area
+    var surfaceAreaReport: String {
+        return "The surface area of the sphere is " + String(format: "%.1f", surfaceArea) + " square units."
+}
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
