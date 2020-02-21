@@ -181,7 +181,17 @@ struct sphere {
     
    //Computed property to return a description of the surface area
     var surfaceAreaReport: String {
-        return "The surface area of the sphere is " + String(format: "%.1f", surfaceArea) + " square units."
+        return "The surface area of the sphere is " + String(format: "%.1f", surfaceArea) + " square units."}
+    
+    //Computed property to return the volume
+       var volume: Double {
+        return (4 * Double.pi * pow(radius, 3)) / 3
+       }
+       
+       //Computed property to return a description of the volume
+       var volumeReport: String {
+           return "The volume of the sphere is " + String(format: "%.1f", volume) + " cubed units."
+       }
 }
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
