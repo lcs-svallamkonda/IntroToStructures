@@ -134,6 +134,11 @@ struct cylinder {
     var surfaceArea: Double {
         return 2 * Double.pi * pow(radius, 2) + 2 * Double.pi * radius * height
     }
+    
+    //Computed property to return the volume
+    var volume: Double {
+        return Double.pi * pow(radius, 2) * height
+    }
 }
 
 /*:
