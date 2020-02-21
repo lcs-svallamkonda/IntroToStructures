@@ -71,7 +71,7 @@ print(someCircle.areaDescription)
 //What is the perimeter?
 someCircle.circumference
 
-//Report on the area?
+//Report on the perimeter?
 print(someCircle.circumferenceDescription)
 
 
@@ -118,11 +118,24 @@ print(someTriangle.areaDesription)
 //What is the perimeter?
 someTriangle.perimeter
 
-//Report on the area?
+//Report on the perimeter?
 print(someTriangle.perimeterReport)
 
 
-//
+
+//cylinder structure
+struct cylinder {
+    
+    //MARK: Properties
+    var radius: Double
+    var height: Double
+    
+    //Computed property to return the raw total surface area
+    var surfaceArea: Double {
+        return 2 * Double.pi * pow(radius, 2) + 2 * Double.pi * radius * height
+    }
+}
+
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
